@@ -7,9 +7,9 @@ LABEL maintainer="Greg Pearson<greg.pearson@starlab.io>"
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
     DEBIAN_FRONTEND=noninteractive apt-get -y install \
-    git && \
-    check && \
-    check-devel && \
+    git \
+    check \
+    check-devel \
     vim-common && \
     apt-get autoremove -y && \
     apt-get clean && \
