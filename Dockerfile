@@ -1,4 +1,4 @@
-FROM arm64v8/ubuntu:1910
+FROM arm64v8/ubuntu:eoan
 
 COPY qemu-aarch64-static /usr/bin/qemu-aarch64-static
 
